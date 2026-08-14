@@ -1,13 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "G",
-    "G",
-    "S"
+    "GG",
+    " S",
+    " S"
   ],
   "key": {
     "G": {
-      "item": "minecraft:glass"
+      "item": "raincat_glasscrafts:fragile_glass"
     },
     "S": {
       "item": "minecraft:stick"
@@ -15,6 +15,6 @@
   },
   "result": {
     "count": 1,
-    "id": "raincat_glasscrafts:glass_longsword"
+    "id": "raincat_glasscrafts:fragile_glass_hoe"
   }
 }

@@ -1,16 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
+    "GGG",
     "G G",
     "G G"
   ],
   "key": {
     "G": {
-      "item": "minecraft:glass"
+      "item": "raincat_glasscrafts:void_glass"
     }
   },
   "result": {
     "count": 1,
-    "id": "raincat_glasscrafts:glass_boots"
+    "id": "raincat_glasscrafts:void_glass_leggings"
   }
 }

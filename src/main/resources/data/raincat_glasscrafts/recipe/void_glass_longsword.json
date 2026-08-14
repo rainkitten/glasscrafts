@@ -7,7 +7,7 @@
   ],
   "key": {
     "G": {
-      "item": "minecraft:glass"
+      "item": "raincat_glasscrafts:void_glass"
     },
     "S": {
       "item": "minecraft:stick"
@@ -15,6 +15,6 @@
   },
   "result": {
     "count": 1,
-    "id": "raincat_glasscrafts:glass_longsword"
+    "id": "raincat_glasscrafts:void_glass_longsword"
   }
 }

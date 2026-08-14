@@ -7,11 +7,11 @@
   ],
   "key": {
     "G": {
-      "item": "raincat_glasscrafts:toughened_glass"
+      "item": "raincat_glasscrafts:diamond_inlaid_glass"
     }
   },
   "result": {
     "count": 1,
-    "id": "raincat_glasscrafts:toughened_glass_chestplate"
+    "id": "raincat_glasscrafts:diamond_inlaid_glass_chestplate"
   }
 }

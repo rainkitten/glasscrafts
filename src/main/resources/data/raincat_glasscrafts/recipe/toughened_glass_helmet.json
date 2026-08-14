@@ -1,12 +1,11 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "equipment",
   "pattern": [
-    "TTT",
-    "T T"
+    "GGG",
+    "G G"
   ],
   "key": {
-    "T": {
+    "G": {
       "item": "raincat_glasscrafts:toughened_glass"
     }
   },

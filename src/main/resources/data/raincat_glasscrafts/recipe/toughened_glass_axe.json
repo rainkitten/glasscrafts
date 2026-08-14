@@ -1,17 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "GGG",
-    "G G",
-    "G G"
+    "GG",
+    "GS",
+    " S"
   ],
   "key": {
     "G": {
       "item": "raincat_glasscrafts:toughened_glass"
+    },
+    "S": {
+      "item": "minecraft:stick"
     }
   },
   "result": {
     "count": 1,
-    "id": "raincat_glasscrafts:toughened_glass_leggings"
+    "id": "raincat_glasscrafts:toughened_glass_axe"
   }
 }

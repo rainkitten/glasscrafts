@@ -1,16 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "G G",
+    "GGG",
     "G G"
   ],
   "key": {
     "G": {
-      "item": "minecraft:glass"
+      "item": "raincat_glasscrafts:diamond_inlaid_glass"
     }
   },
   "result": {
     "count": 1,
-    "id": "raincat_glasscrafts:glass_boots"
+    "id": "raincat_glasscrafts:diamond_inlaid_glass_helmet"
   }
 }
