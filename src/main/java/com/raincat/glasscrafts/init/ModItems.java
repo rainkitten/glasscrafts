@@ -49,6 +49,18 @@ public class ModItems {
     public static final DeferredItem<com.raincat.glasscrafts.item.GlassDashWandItem> GLASS_DASH_WAND = ITEMS.registerItem("glass_dash_wand", 
             properties -> new com.raincat.glasscrafts.item.GlassDashWandItem(properties.durability(60).rarity(Rarity.RARE)));
 
+    // 玻璃蒸干法杖 (消去大范围内所有液体)
+    public static final DeferredItem<com.raincat.glasscrafts.item.GlassEraseWandItem> GLASS_ERASE_WAND = ITEMS.registerItem("glass_erase_wand", 
+            properties -> new com.raincat.glasscrafts.item.GlassEraseWandItem(properties.durability(80).rarity(Rarity.RARE)));
+
+    // 玻璃潜行护符 (提供隐形与移动速度)
+    public static final DeferredItem<com.raincat.glasscrafts.item.GlassStealthSigilItem> GLASS_STEALTH_SIGIL = ITEMS.registerItem("glass_stealth_sigil", 
+            properties -> new com.raincat.glasscrafts.item.GlassStealthSigilItem(properties.durability(30).rarity(Rarity.RARE)));
+
+    // 玻璃催熟剂 (3x3强力骨粉催熟)
+    public static final DeferredItem<com.raincat.glasscrafts.item.GlassGrowFertilizerItem> GLASS_GROW_FERTILIZER = ITEMS.registerItem("glass_grow_fertilizer", 
+            properties -> new com.raincat.glasscrafts.item.GlassGrowFertilizerItem(properties.durability(50).rarity(Rarity.UNCOMMON)));
+
     // 1. 易碎玻璃系列 (Fragile Glass) - 耐久乘数 1 (极限超低耐久：头盔11/胸甲16/护腿15/靴子13)
     public static final DeferredItem<SwordItem> FRAGILE_GLASS_LONGSWORD = ITEMS.registerItem("fragile_glass_longsword",
             properties -> new SwordItem(ModToolTiers.FRAGILE_GLASS, properties.attributes(SwordItem.createAttributes(ModToolTiers.FRAGILE_GLASS, 3, -2.4F))));

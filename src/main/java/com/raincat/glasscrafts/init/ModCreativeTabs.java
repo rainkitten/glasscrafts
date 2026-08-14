@@ -28,6 +28,9 @@ public class ModCreativeTabs {
                         output.accept(ModItems.GLASS_SONIC_BELL.get());
                         output.accept(ModItems.GLASS_REGEN_CROWN.get());
                         output.accept(ModItems.GLASS_DASH_WAND.get());
+                        output.accept(ModItems.GLASS_ERASE_WAND.get());
+                        output.accept(ModItems.GLASS_STEALTH_SIGIL.get());
+                        output.accept(ModItems.GLASS_GROW_FERTILIZER.get());
 
                         // 1. 易碎玻璃
                         output.accept(ModItems.FRAGILE_GLASS.get());
