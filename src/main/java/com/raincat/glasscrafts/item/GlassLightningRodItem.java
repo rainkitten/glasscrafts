@@ -30,8 +30,8 @@ public class GlassLightningRodItem extends Item {
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         ItemStack itemstack = player.getItemInHand(hand);
 
-        // 仅在雷雨天可以使用
-        if (!level.isThundering()) {
+        // 只要是下雨天或雷雨天均可以使用
+        if (!level.isRaining()) {
             if (level.isClientSide()) {
                 player.displayClientMessage(Component.translatable("message.raincat_glasscrafts.lightning_rod_no_thunder"), true);
             }

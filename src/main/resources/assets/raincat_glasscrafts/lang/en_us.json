@@ -8,6 +8,8 @@
   "block.raincat_glasscrafts.gold_inlaid_glass": "Gold Inlaid Glass",
   "block.raincat_glasscrafts.diamond_inlaid_glass": "Diamond Inlaid Glass",
   "block.raincat_glasscrafts.void_glass": "Void Glass",
+  "block.raincat_glasscrafts.glass_chest": "Glass Chest",
+  "container.raincat_glasscrafts.glass_chest": "Glass Chest (81 Slots)",
 
   "block.raincat_glasscrafts.glass_torch": "Glass Torch",
   "block.raincat_glasscrafts.glass_chandelier": "Glass Chandelier",
@@ -55,7 +57,7 @@
   "item.raincat_glasscrafts.glass_alchemic_flask.desc": "Drink to clear all current potion effects",
   "item.raincat_glasscrafts.glass_golem_core.desc": "Grants Resistance V and Strength II shield to friendly mobs & golems",
 
-  "message.raincat_glasscrafts.lightning_rod_no_thunder": "Can only summon lightning during a thunderstorm!",
+  "message.raincat_glasscrafts.lightning_rod_no_thunder": "Can only summon lightning during rain or thunderstorm!",
   "message.raincat_glasscrafts.warp_compass_no_bed": "No valid spawn position or bed found!",
   "message.raincat_glasscrafts.prism_no_sunlight": "No sunlight, cannot focus heat!",
 

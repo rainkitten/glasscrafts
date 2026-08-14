@@ -21,6 +21,7 @@ public class ModCreativeTabs {
                         // 新增的独立玻璃小用品
                         output.accept(ModItems.GLASS_TORCH.get());
                         output.accept(ModItems.GLASS_CHANDELIER.get());
+                        output.accept(ModItems.GLASS_CHEST.get());
                         output.accept(ModItems.GLASS_PEARL.get());
                         output.accept(ModItems.GLASS_BOW.get());
                         output.accept(ModItems.GLASS_LENS.get());

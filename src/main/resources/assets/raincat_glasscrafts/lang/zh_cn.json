@@ -8,6 +8,8 @@
   "block.raincat_glasscrafts.gold_inlaid_glass": "镶金玻璃",
   "block.raincat_glasscrafts.diamond_inlaid_glass": "镶钻玻璃",
   "block.raincat_glasscrafts.void_glass": "虚无玻璃",
+  "block.raincat_glasscrafts.glass_chest": "玻璃箱子",
+  "container.raincat_glasscrafts.glass_chest": "玻璃箱子 (81格超大空间)",
   
   "block.raincat_glasscrafts.glass_torch": "玻璃火把",
   "block.raincat_glasscrafts.glass_chandelier": "玻璃吊灯",
@@ -55,7 +57,7 @@
   "item.raincat_glasscrafts.glass_alchemic_flask.desc": "饮用消除玩家当前的所有状态效果",
   "item.raincat_glasscrafts.glass_golem_core.desc": "为友善生物与傀儡提供 60 秒无敌与力量护盾",
 
-  "message.raincat_glasscrafts.lightning_rod_no_thunder": "只有雷雨天才能引雷！",
+  "message.raincat_glasscrafts.lightning_rod_no_thunder": "只有下雨或雷雨天才能引雷！",
   "message.raincat_glasscrafts.warp_compass_no_bed": "未找到有效的重生点或床！",
   "message.raincat_glasscrafts.prism_no_sunlight": "光线微弱，无法聚焦阳光！",
 

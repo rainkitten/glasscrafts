@@ -20,6 +20,7 @@ public class ModItems {
     // 新增的物品和方块物品
     public static final DeferredItem<BlockItem> GLASS_TORCH = ITEMS.registerSimpleBlockItem("glass_torch", ModBlocks.GLASS_TORCH);
     public static final DeferredItem<BlockItem> GLASS_CHANDELIER = ITEMS.registerSimpleBlockItem("glass_chandelier", ModBlocks.GLASS_CHANDELIER);
+    public static final DeferredItem<BlockItem> GLASS_CHEST = ITEMS.registerSimpleBlockItem("glass_chest", ModBlocks.GLASS_CHEST);
     
     // 玻璃珍珠
     public static final DeferredItem<GlassPearlItem> GLASS_PEARL = ITEMS.registerItem("glass_pearl", 

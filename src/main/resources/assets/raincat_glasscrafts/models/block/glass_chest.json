@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "raincat_glasscrafts:block/glass_chest"
+  }
+}

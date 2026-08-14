@@ -2,6 +2,7 @@ package com.raincat.glasscrafts;
 
 import com.raincat.glasscrafts.entity.ModEntities;
 import com.raincat.glasscrafts.init.ModArmorMaterials;
+import com.raincat.glasscrafts.init.ModBlockEntities;
 import com.raincat.glasscrafts.init.ModBlocks;
 import com.raincat.glasscrafts.init.ModCreativeTabs;
 import com.raincat.glasscrafts.init.ModItems;
@@ -23,6 +24,7 @@ public class GlassCrafts {
         // Register registries to mod event bus
         ModBlocks.BLOCKS.register(modEventBus);
         ModItems.ITEMS.register(modEventBus);
+        ModBlockEntities.BLOCK_ENTITIES.register(modEventBus);
         ModArmorMaterials.ARMOR_MATERIALS.register(modEventBus);
         ModMobEffects.MOB_EFFECTS.register(modEventBus);
         ModCreativeTabs.CREATIVE_MODE_TABS.register(modEventBus);

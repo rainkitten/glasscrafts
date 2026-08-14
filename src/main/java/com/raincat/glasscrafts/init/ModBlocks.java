@@ -30,6 +30,11 @@ public class ModBlocks {
             properties -> new GlassChandelierBlock(properties), 
             BlockBehaviour.Properties.ofFullCopy(Blocks.LANTERN).lightLevel(state -> 15).noOcclusion());
 
+    // 玻璃箱子 (3倍原版容量 81格)
+    public static final DeferredBlock<Block> GLASS_CHEST = BLOCKS.registerBlock("glass_chest",
+            properties -> new com.raincat.glasscrafts.block.GlassChestBlock(properties),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).strength(1.5F, 3.0F).noOcclusion());
+
     private static DeferredBlock<Block> registerGlass(String name, float strength, float blast) {
         return BLOCKS.registerBlock(name, TransparentBlock::new,
                 BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).strength(strength, blast));
