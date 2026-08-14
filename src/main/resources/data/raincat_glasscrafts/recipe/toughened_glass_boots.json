@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "T T",
+    "T T"
+  ],
+  "key": {
+    "T": {
+      "item": "raincat_glasscrafts:toughened_glass"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "raincat_glasscrafts:toughened_glass_boots"
+  }
+}

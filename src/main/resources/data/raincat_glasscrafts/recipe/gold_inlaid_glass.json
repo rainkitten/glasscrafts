@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TTT",
+    "TGT",
+    "TTT"
+  ],
+  "key": {
+    "T": {
+      "item": "raincat_glasscrafts:toughened_glass"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "count": 4,
+    "id": "raincat_glasscrafts:gold_inlaid_glass"
+  }
+}

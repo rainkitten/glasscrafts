@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "T",
+    "T",
+    "S"
+  ],
+  "key": {
+    "T": {
+      "item": "raincat_glasscrafts:toughened_glass"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "raincat_glasscrafts:toughened_glass_longsword"
+  }
+}

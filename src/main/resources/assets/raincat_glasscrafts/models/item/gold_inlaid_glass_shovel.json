@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "raincat_glasscrafts:item/gold_inlaid_glass_shovel"
+  }
+}

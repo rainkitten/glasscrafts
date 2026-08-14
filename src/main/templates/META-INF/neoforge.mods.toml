@@ -1,0 +1,37 @@
+# This is an example neoforge.mods.toml file. It contains the data relating to the loading mods.
+# There are several mandatory fields (#mandatory), and many more that are optional (#optional).
+# The overall format is standard TOML format, v0.5.0.
+# Note that there are a couple of TOML lists in this file.
+# Find more information on toml format here:  https://github.com/toml-lang/toml
+
+modLoader="javafml" #mandatory
+loaderVersion="${loader_version_range}" #mandatory
+license="${mod_license}"
+
+[[mods]] #mandatory
+modId="${mod_id}" #mandatory
+version="${mod_version}" #mandatory
+displayName="${mod_name}" #mandatory
+logoFile="icon.png"
+credits="Developed by RainCat"
+authors="RainCat"
+description='''
+GlassCrafts v1.0.1 release.
+A Minecraft glass equipment and tools expansion mod with high-risk, high-reward gameplay.
+Includes Fragile Glass, Glass, Toughened Glass, Gold-Inlaid Glass, Diamond-Inlaid Glass, and the fully damage-immune, bedrock-mining Void Glass set.
+Also adds the distinctive "Glass Shard" damage effect, self-prick chance, and full armor set progression.
+'''
+
+[[dependencies.${mod_id}]]
+    modId="neoforge"
+    type="required"
+    versionRange="[1,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
