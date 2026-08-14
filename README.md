@@ -7,6 +7,9 @@
 ![Java](https://img.shields.io/badge/Java-21-red.svg?style=for-the-badge&logo=openjdk)
 ![Version](https://img.shields.io/badge/Version-2.1.0-brightgreen.svg?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-lightgrey.svg?style=for-the-badge)
+[![GitHub Repo stars](https://img.shields.io/github/stars/rainkitten/glasscrafts?style=for-the-badge&logo=github)](https://github.com/rainkitten/glasscrafts)
+[![GitHub forks](https://img.shields.io/github/forks/rainkitten/glasscrafts?style=for-the-badge&logo=github)](https://github.com/rainkitten/glasscrafts)
+
 
 **以玻璃之刃斩断虚空，以锋芒之躯博弈生死。**  
 *一款专为 Minecraft 1.21 NeoForge 打造的极限超低耐久、超高爆发、锋锐自伤机制的高阶玻璃装备模组。*
