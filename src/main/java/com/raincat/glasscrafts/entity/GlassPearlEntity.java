@@ -4,30 +4,29 @@ import com.raincat.glasscrafts.init.ModItems;
 import com.raincat.glasscrafts.init.ModMobEffects;
 import net.minecraft.core.particles.ItemParticleOption;
 import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.projectile.ThrowableItemProjectile;
+import net.minecraft.world.entity.projectile.Snowball;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.HitResult;
 
-public class GlassPearlEntity extends ThrowableItemProjectile {
+public class GlassPearlEntity extends Snowball {
 
     public GlassPearlEntity(EntityType<? extends GlassPearlEntity> entityType, Level level) {
         super(entityType, level);
     }
 
     public GlassPearlEntity(Level level, LivingEntity shooter) {
-        super(ModEntities.GLASS_PEARL.get(), shooter, level);
+        super(level, shooter);
     }
 
     public GlassPearlEntity(Level level, double x, double y, double z) {
-        super(ModEntities.GLASS_PEARL.get(), x, y, z, level);
+        super(level, x, y, z);
     }
 
     @Override
@@ -40,7 +39,7 @@ public class GlassPearlEntity extends ThrowableItemProjectile {
         super.onHitEntity(result);
         Entity target = result.getEntity();
         if (target instanceof LivingEntity livingTarget) {
-            // 造成 5 点伤害
+            // 造成 5 点直接玻璃伤害
             livingTarget.hurt(this.damageSources().thrown(this, this.getOwner()), 5.0F);
             // 附加 15 秒 (300 ticks) "扎死我了" 效果
             livingTarget.addEffect(new MobEffectInstance(ModMobEffects.GLASS_SHARD, 300, 0));
@@ -51,18 +50,7 @@ public class GlassPearlEntity extends ThrowableItemProjectile {
     protected void onHit(HitResult result) {
         super.onHit(result);
         if (!this.level().isClientSide()) {
-            Entity owner = this.getOwner();
-            if (owner instanceof ServerPlayer serverPlayer) {
-                if (serverPlayer.connection.isAcceptingMessages() && serverPlayer.level() == this.level() && !serverPlayer.isSleeping()) {
-                    // 传送玩家到命中地点
-                    if (serverPlayer.isPassenger()) {
-                        serverPlayer.stopRiding();
-                    }
-                    serverPlayer.teleportTo(this.getX(), this.getY(), this.getZ());
-                    serverPlayer.resetFallDistance();
-                }
-            }
-            // 产生玻璃破碎的粒子效果
+            // 产生玻璃碎片粒子
             for (int i = 0; i < 32; ++i) {
                 this.level().addParticle(new ItemParticleOption(ParticleTypes.ITEM, new ItemStack(this.getDefaultItem())), 
                         this.getX(), this.getY(), this.getZ(), 
