@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "raincat_glasscrafts:item/glass_pearl"
+    "layer0": "raincat_glasscrafts:item/glass_ocean_shell"
   }
 }

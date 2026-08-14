@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "raincat_glasscrafts:item/glass_flute"
+    "layer0": "raincat_glasscrafts:item/glass_echo_flute"
   }
 }

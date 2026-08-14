@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "raincat_glasscrafts:item/glass_decanter"
+    "layer0": "raincat_glasscrafts:item/glass_lightning_rod"
   }
 }
