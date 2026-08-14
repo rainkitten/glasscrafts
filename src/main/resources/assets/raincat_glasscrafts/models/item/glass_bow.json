@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:item/bow",
+  "parent": "minecraft:item/generated",
   "textures": {
-    "bow": "minecraft:item/bow"
+    "layer0": "raincat_glasscrafts:item/glass_bow"
   }
 }
