@@ -23,7 +23,7 @@ public class GlassEraseWandItem extends Item {
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         ItemStack itemstack = player.getItemInHand(hand);
         
-        player.getCooldowns().addCooldown(this, 100); // 5秒冷却
+        player.getCooldowns().addCooldown(this, 20); // 1秒短CD
 
         if (!level.isClientSide() && level instanceof ServerLevel serverLevel) {
             BlockPos playerPos = player.blockPosition();

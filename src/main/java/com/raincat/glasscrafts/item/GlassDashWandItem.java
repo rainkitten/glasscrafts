@@ -21,7 +21,7 @@ public class GlassDashWandItem extends Item {
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         ItemStack itemstack = player.getItemInHand(hand);
         
-        player.getCooldowns().addCooldown(this, 60); // 3秒超短冷却，支持高机动性跑图
+        player.getCooldowns().addCooldown(this, 10); // 0.5秒极短CD
 
         // 播放玻璃闪鸣的音效
         level.playSound(null, player.getX(), player.getY(), player.getZ(),

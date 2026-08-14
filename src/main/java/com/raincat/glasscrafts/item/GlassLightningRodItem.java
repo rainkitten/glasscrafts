@@ -38,7 +38,7 @@ public class GlassLightningRodItem extends Item {
             return InteractionResultHolder.fail(itemstack);
         }
 
-        player.getCooldowns().addCooldown(this, 200); // 10秒冷却
+        player.getCooldowns().addCooldown(this, 40); // 2秒短CD
 
         // 射线检测：判定准星指向的实体或方块
         Vec3 eyePos = player.getEyePosition();

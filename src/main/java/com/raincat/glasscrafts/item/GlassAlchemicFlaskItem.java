@@ -25,7 +25,7 @@ public class GlassAlchemicFlaskItem extends Item {
             return InteractionResultHolder.pass(itemstack);
         }
 
-        player.getCooldowns().addCooldown(this, 100); // 5秒冷却
+        player.getCooldowns().addCooldown(this, 20); // 1秒短冷却
 
         // 播放咕嘟饮水和玻璃破碎音
         level.playSound(null, player.getX(), player.getY(), player.getZ(),

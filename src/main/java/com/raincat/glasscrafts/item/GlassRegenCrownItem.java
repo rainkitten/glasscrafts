@@ -22,7 +22,7 @@ public class GlassRegenCrownItem extends Item {
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         ItemStack itemstack = player.getItemInHand(hand);
         
-        player.getCooldowns().addCooldown(this, 400); // 20秒冷却时间
+        player.getCooldowns().addCooldown(this, 100); // 5秒短CD
 
         level.playSound(null, player.getX(), player.getY(), player.getZ(),
                 SoundEvents.AMETHYST_BLOCK_CHIME, SoundSource.PLAYERS, 1.0F, 1.2F);

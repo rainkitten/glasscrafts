@@ -22,7 +22,7 @@ public class GlassOceanShellItem extends Item {
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         ItemStack itemstack = player.getItemInHand(hand);
 
-        player.getCooldowns().addCooldown(this, 600); // 30秒冷却
+        player.getCooldowns().addCooldown(this, 100); // 5秒短CD
 
         // 播放深海回音和玻璃破碎回声
         level.playSound(null, player.getX(), player.getY(), player.getZ(),

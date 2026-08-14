@@ -27,7 +27,7 @@ public class GlassEchoFluteItem extends Item {
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         ItemStack itemstack = player.getItemInHand(hand);
         
-        player.getCooldowns().addCooldown(this, 120); // 6秒冷却
+        player.getCooldowns().addCooldown(this, 30); // 1.5秒短CD
 
         // 播放优雅高亢的玻璃共鸣声音
         level.playSound(null, player.getX(), player.getY(), player.getZ(),

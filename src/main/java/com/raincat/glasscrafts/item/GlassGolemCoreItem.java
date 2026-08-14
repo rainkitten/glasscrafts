@@ -24,7 +24,7 @@ public class GlassGolemCoreItem extends Item {
         boolean isGolemOrFriendly = target.getType().getCategory().isFriendly() || target instanceof net.minecraft.world.entity.animal.IronGolem || target instanceof net.minecraft.world.entity.animal.SnowGolem;
         
         if (isGolemOrFriendly) {
-            player.getCooldowns().addCooldown(this, 100); // 5秒冷却
+            player.getCooldowns().addCooldown(this, 20); // 1秒短CD
 
             target.level().playSound(null, target.getX(), target.getY(), target.getZ(),
                     SoundEvents.BEACON_ACTIVATE, SoundSource.PLAYERS, 1.0F, 1.5F);

@@ -19,7 +19,7 @@ public class GlassCharmItem extends Item {
         ItemStack itemstack = player.getItemInHand(hand);
         
         // 赋予玩家 15 秒的冷却时间 (300 ticks)
-        player.getCooldowns().addCooldown(this, 300);
+        player.getCooldowns().addCooldown(this, 40); // 2秒短冷却
 
         if (!level.isClientSide()) {
             // 瞬间清除玩家身上所有的负面Buff，并且提供 5 秒的急迫 II 状态

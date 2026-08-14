@@ -24,7 +24,7 @@ public class GlassLensItem extends Item {
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         ItemStack itemstack = player.getItemInHand(hand);
         
-        player.getCooldowns().addCooldown(this, 100);
+        player.getCooldowns().addCooldown(this, 20); // 1秒短CD
 
         level.playSound(null, player.getX(), player.getY(), player.getZ(),
                 SoundEvents.AMETHYST_BLOCK_CHIME, SoundSource.PLAYERS, 1.0F, 1.6F);

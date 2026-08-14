@@ -27,7 +27,7 @@ public class GlassGrowFertilizerItem extends Item {
         ItemStack itemstack = context.getItemInHand();
 
         if (player != null) {
-            player.getCooldowns().addCooldown(this, 100); // 5秒冷却
+            player.getCooldowns().addCooldown(this, 15); // 0.75秒短CD
         }
 
         if (!level.isClientSide() && level instanceof ServerLevel serverLevel) {

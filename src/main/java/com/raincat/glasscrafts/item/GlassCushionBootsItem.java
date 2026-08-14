@@ -22,7 +22,7 @@ public class GlassCushionBootsItem extends Item {
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         ItemStack itemstack = player.getItemInHand(hand);
         
-        player.getCooldowns().addCooldown(this, 300); // 15秒冷却
+        player.getCooldowns().addCooldown(this, 40); // 2秒短冷却
 
         level.playSound(null, player.getX(), player.getY(), player.getZ(),
                 SoundEvents.GLASS_BREAK, SoundSource.PLAYERS, 0.6F, 1.8F);

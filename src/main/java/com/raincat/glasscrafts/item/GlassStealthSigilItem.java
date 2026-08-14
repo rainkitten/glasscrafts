@@ -22,7 +22,7 @@ public class GlassStealthSigilItem extends Item {
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         ItemStack itemstack = player.getItemInHand(hand);
         
-        player.getCooldowns().addCooldown(this, 600); // 30秒长冷却时间
+        player.getCooldowns().addCooldown(this, 100); // 5秒短CD
 
         level.playSound(null, player.getX(), player.getY(), player.getZ(),
                 SoundEvents.GLASS_BREAK, SoundSource.PLAYERS, 0.6F, 1.8F);
