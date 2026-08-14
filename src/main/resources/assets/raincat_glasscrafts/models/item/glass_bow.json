@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/bow",
+  "textures": {
+    "bow": "minecraft:item/bow"
+  }
+}

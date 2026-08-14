@@ -9,6 +9,11 @@
   "block.raincat_glasscrafts.diamond_inlaid_glass": "Diamond Inlaid Glass",
   "block.raincat_glasscrafts.void_glass": "Void Glass",
 
+  "block.raincat_glasscrafts.glass_torch": "Glass Torch",
+  "block.raincat_glasscrafts.glass_chandelier": "Glass Chandelier",
+  "item.raincat_glasscrafts.glass_pearl": "Glass Pearl",
+  "item.raincat_glasscrafts.glass_bow": "Glass Bow",
+
   "item.raincat_glasscrafts.fragile_glass_longsword": "Fragile Glass Longsword",
   "item.raincat_glasscrafts.fragile_glass_pickaxe": "Fragile Glass Pickaxe",
   "item.raincat_glasscrafts.fragile_glass_axe": "Fragile Glass Axe",
@@ -67,5 +72,7 @@
   "item.raincat_glasscrafts.void_glass_helmet": "Void Glass Helmet",
   "item.raincat_glasscrafts.void_glass_chestplate": "Void Glass Chestplate",
   "item.raincat_glasscrafts.void_glass_leggings": "Void Glass Leggings",
-  "item.raincat_glasscrafts.void_glass_boots": "Void Glass Boots"
+  "item.raincat_glasscrafts.void_glass_boots": "Void Glass Boots",
+
+  "entity.raincat_glasscrafts.glass_pearl": "Glass Pearl"
 }

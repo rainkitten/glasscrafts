@@ -8,6 +8,11 @@
   "block.raincat_glasscrafts.gold_inlaid_glass": "镶金玻璃",
   "block.raincat_glasscrafts.diamond_inlaid_glass": "镶钻玻璃",
   "block.raincat_glasscrafts.void_glass": "虚无玻璃",
+  
+  "block.raincat_glasscrafts.glass_torch": "玻璃火把",
+  "block.raincat_glasscrafts.glass_chandelier": "玻璃吊灯",
+  "item.raincat_glasscrafts.glass_pearl": "玻璃珍珠",
+  "item.raincat_glasscrafts.glass_bow": "玻璃弓",
 
   "item.raincat_glasscrafts.fragile_glass_longsword": "易碎玻璃长刀",
   "item.raincat_glasscrafts.fragile_glass_pickaxe": "易碎玻璃镐",
@@ -67,5 +72,7 @@
   "item.raincat_glasscrafts.void_glass_helmet": "虚无玻璃头盔",
   "item.raincat_glasscrafts.void_glass_chestplate": "虚无玻璃胸甲",
   "item.raincat_glasscrafts.void_glass_leggings": "虚无玻璃护腿",
-  "item.raincat_glasscrafts.void_glass_boots": "虚无玻璃靴子"
+  "item.raincat_glasscrafts.void_glass_boots": "虚无玻璃靴子",
+  
+  "entity.raincat_glasscrafts.glass_pearl": "玻璃珍珠"
 }

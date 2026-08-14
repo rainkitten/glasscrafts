@@ -1,6 +1,8 @@
 package com.raincat.glasscrafts.init;
 
 import com.raincat.glasscrafts.GlassCrafts;
+import com.raincat.glasscrafts.block.GlassChandelierBlock;
+import com.raincat.glasscrafts.block.GlassTorchBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.TransparentBlock;
@@ -18,6 +20,15 @@ public class ModBlocks {
     public static final DeferredBlock<Block> GOLD_INLAID_GLASS = registerGlass("gold_inlaid_glass", 4.0F, 12.0F);
     public static final DeferredBlock<Block> DIAMOND_INLAID_GLASS = registerGlass("diamond_inlaid_glass", 6.0F, 20.0F);
     public static final DeferredBlock<Block> VOID_GLASS = registerGlass("void_glass", 10.0F, 100.0F, true);
+
+    // 玻璃火把与玻璃吊灯
+    public static final DeferredBlock<Block> GLASS_TORCH = BLOCKS.registerBlock("glass_torch", 
+            properties -> new GlassTorchBlock(properties), 
+            BlockBehaviour.Properties.ofFullCopy(Blocks.TORCH).lightLevel(state -> 14).noOcclusion());
+
+    public static final DeferredBlock<Block> GLASS_CHANDELIER = BLOCKS.registerBlock("glass_chandelier", 
+            properties -> new GlassChandelierBlock(properties), 
+            BlockBehaviour.Properties.ofFullCopy(Blocks.LANTERN).lightLevel(state -> 15).noOcclusion());
 
     private static DeferredBlock<Block> registerGlass(String name, float strength, float blast) {
         return BLOCKS.registerBlock(name, TransparentBlock::new,

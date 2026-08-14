@@ -18,6 +18,12 @@ public class ModCreativeTabs {
                     .withTabsBefore(CreativeModeTabs.COMBAT)
                     .icon(() -> ModItems.VOID_GLASS_LONGSWORD.get().getDefaultInstance())
                     .displayItems((parameters, output) -> {
+                        // 新增的独立玻璃小用品
+                        output.accept(ModItems.GLASS_TORCH.get());
+                        output.accept(ModItems.GLASS_CHANDELIER.get());
+                        output.accept(ModItems.GLASS_PEARL.get());
+                        output.accept(ModItems.GLASS_BOW.get());
+
                         // 1. 易碎玻璃
                         output.accept(ModItems.FRAGILE_GLASS.get());
                         output.accept(ModItems.FRAGILE_GLASS_LONGSWORD.get());

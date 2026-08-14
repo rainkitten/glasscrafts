@@ -1,6 +1,7 @@
 package com.raincat.glasscrafts.init;
 
 import com.raincat.glasscrafts.GlassCrafts;
+import com.raincat.glasscrafts.item.GlassPearlItem;
 import net.minecraft.world.item.*;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -15,6 +16,18 @@ public class ModItems {
     public static final DeferredItem<BlockItem> GOLD_INLAID_GLASS = ITEMS.registerSimpleBlockItem("gold_inlaid_glass", ModBlocks.GOLD_INLAID_GLASS);
     public static final DeferredItem<BlockItem> DIAMOND_INLAID_GLASS = ITEMS.registerSimpleBlockItem("diamond_inlaid_glass", ModBlocks.DIAMOND_INLAID_GLASS);
     public static final DeferredItem<BlockItem> VOID_GLASS = ITEMS.registerSimpleBlockItem("void_glass", ModBlocks.VOID_GLASS);
+
+    // 新增的物品和方块物品
+    public static final DeferredItem<BlockItem> GLASS_TORCH = ITEMS.registerSimpleBlockItem("glass_torch", ModBlocks.GLASS_TORCH);
+    public static final DeferredItem<BlockItem> GLASS_CHANDELIER = ITEMS.registerSimpleBlockItem("glass_chandelier", ModBlocks.GLASS_CHANDELIER);
+    
+    // 玻璃珍珠
+    public static final DeferredItem<GlassPearlItem> GLASS_PEARL = ITEMS.registerItem("glass_pearl", 
+            properties -> new GlassPearlItem(properties.stacksTo(16).rarity(Rarity.UNCOMMON)));
+            
+    // 玻璃弓箭
+    public static final DeferredItem<BowItem> GLASS_BOW = ITEMS.registerItem("glass_bow", 
+            properties -> new BowItem(properties.durability(64).rarity(Rarity.COMMON)));
 
     // 1. 易碎玻璃系列 (Fragile Glass) - 耐久乘数 1 (极限超低耐久：头盔11/胸甲16/护腿15/靴子13)
     public static final DeferredItem<SwordItem> FRAGILE_GLASS_LONGSWORD = ITEMS.registerItem("fragile_glass_longsword",
