@@ -22,6 +22,21 @@
   "item.raincat_glasscrafts.glass_stealth_sigil": "玻璃潜行护符",
   "item.raincat_glasscrafts.glass_grow_fertilizer": "玻璃植物催熟剂",
 
+  "item.raincat_glasscrafts.glass_echo_flute": "玻璃回音笛",
+  "item.raincat_glasscrafts.glass_cushion_boots": "玻璃气垫靴",
+  "item.raincat_glasscrafts.glass_lightning_rod": "玻璃避雷针",
+  "item.raincat_glasscrafts.glass_magnet": "玻璃磁铁",
+  "item.raincat_glasscrafts.glass_warp_compass": "玻璃重生罗盘",
+  "item.raincat_glasscrafts.glass_reflector": "玻璃折射镜",
+  "item.raincat_glasscrafts.glass_prism": "玻璃棱镜",
+  "item.raincat_glasscrafts.glass_ocean_shell": "玻璃潮汐螺",
+  "item.raincat_glasscrafts.glass_alchemic_flask": "玻璃炼金瓶",
+  "item.raincat_glasscrafts.glass_golem_core": "玻璃傀儡核心",
+
+  "message.raincat_glasscrafts.lightning_rod_no_thunder": "只有雷雨天才能引雷！",
+  "message.raincat_glasscrafts.warp_compass_no_bed": "未找到有效的重生点或床！",
+  "message.raincat_glasscrafts.prism_no_sunlight": "光线微弱，无法聚焦阳光！",
+
   "item.raincat_glasscrafts.fragile_glass_longsword": "易碎玻璃长刀",
   "item.raincat_glasscrafts.fragile_glass_pickaxe": "易碎玻璃镐",
   "item.raincat_glasscrafts.fragile_glass_axe": "易碎玻璃斧",

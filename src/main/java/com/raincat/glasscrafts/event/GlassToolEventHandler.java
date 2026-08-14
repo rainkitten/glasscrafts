@@ -59,6 +59,54 @@ public class GlassToolEventHandler {
     }
 
     @SubscribeEvent
+    public static void onLivingIncomingDamage(net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent event) {
+        if (event.getEntity().level().isClientSide() || !(event.getEntity() instanceof Player player)) {
+            return;
+        }
+
+        // 检查副手或主手是否装备有玻璃折射镜
+        ItemStack reflectorStack = ItemStack.EMPTY;
+        if (player.getOffhandItem().is(ModItems.GLASS_REFLECTOR.get())) {
+            reflectorStack = player.getOffhandItem();
+        } else if (player.getMainHandItem().is(ModItems.GLASS_REFLECTOR.get())) {
+            reflectorStack = player.getMainHandItem();
+        }
+
+        if (reflectorStack.isEmpty()) {
+            return;
+        }
+
+        net.minecraft.world.damagesource.DamageSource source = event.getSource();
+        if (source.is(net.minecraft.tags.DamageTypeTags.IS_PROJECTILE)) {
+            net.minecraft.world.entity.Entity directEntity = source.getDirectEntity();
+            if (directEntity instanceof net.minecraft.world.entity.projectile.Projectile projectile) {
+                // 50% 概率反弹
+                if (RANDOM.nextFloat() < 0.50F) {
+                    event.setCanceled(true); // 免疫当前伤害
+
+                    // 重新定向弹射物
+                    net.minecraft.world.phys.Vec3 motion = projectile.getDeltaMovement();
+                    // 取反并增加速度，同时加上稍微的向斜上方倾向
+                    projectile.setDeltaMovement(motion.x * -1.5, motion.y * -1.0 + 0.1, motion.z * -1.5);
+                    projectile.hurtMarked = true;
+
+                    // 将弹射物拥有者设为玩家，使得它能伤及其他敌对生物
+                    projectile.setOwner(player);
+
+                    // 播放清脆的玻璃反弹声音
+                    player.level().playSound(null, player.getX(), player.getY(), player.getZ(),
+                            SoundEvents.GLASS_BREAK, SoundSource.PLAYERS, 0.6F, 1.8F);
+                    player.level().playSound(null, player.getX(), player.getY(), player.getZ(),
+                            SoundEvents.SHIELD_BLOCK, SoundSource.PLAYERS, 0.8F, 1.4F);
+
+                    // 消耗折射镜耐久
+                    reflectorStack.hurtAndBreak(1, player, player.getEquipmentSlotForItem(reflectorStack));
+                }
+            }
+        }
+    }
+
+    @SubscribeEvent
     public static void onBlockBreak(BlockEvent.BreakEvent event) {
         Player player = event.getPlayer();
         if (player == null || player.level().isClientSide()) {

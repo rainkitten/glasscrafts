@@ -22,6 +22,21 @@
   "item.raincat_glasscrafts.glass_stealth_sigil": "Glass Stealth Sigil",
   "item.raincat_glasscrafts.glass_grow_fertilizer": "Glass Grow Fertilizer",
 
+  "item.raincat_glasscrafts.glass_echo_flute": "Glass Echo Flute",
+  "item.raincat_glasscrafts.glass_cushion_boots": "Glass Cushion Boots",
+  "item.raincat_glasscrafts.glass_lightning_rod": "Glass Lightning Rod",
+  "item.raincat_glasscrafts.glass_magnet": "Glass Magnet",
+  "item.raincat_glasscrafts.glass_warp_compass": "Glass Warp Compass",
+  "item.raincat_glasscrafts.glass_reflector": "Glass Reflector",
+  "item.raincat_glasscrafts.glass_prism": "Glass Prism",
+  "item.raincat_glasscrafts.glass_ocean_shell": "Glass Ocean Shell",
+  "item.raincat_glasscrafts.glass_alchemic_flask": "Glass Alchemic Flask",
+  "item.raincat_glasscrafts.glass_golem_core": "Glass Golem Core",
+
+  "message.raincat_glasscrafts.lightning_rod_no_thunder": "Can only summon lightning during a thunderstorm!",
+  "message.raincat_glasscrafts.warp_compass_no_bed": "No valid spawn position or bed found!",
+  "message.raincat_glasscrafts.prism_no_sunlight": "No sunlight, cannot focus heat!",
+
   "item.raincat_glasscrafts.fragile_glass_longsword": "Fragile Glass Longsword",
   "item.raincat_glasscrafts.fragile_glass_pickaxe": "Fragile Glass Pickaxe",
   "item.raincat_glasscrafts.fragile_glass_axe": "Fragile Glass Axe",

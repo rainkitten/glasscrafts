@@ -31,6 +31,17 @@ public class ModCreativeTabs {
                         output.accept(ModItems.GLASS_ERASE_WAND.get());
                         output.accept(ModItems.GLASS_STEALTH_SIGIL.get());
                         output.accept(ModItems.GLASS_GROW_FERTILIZER.get());
+                        
+                        output.accept(ModItems.GLASS_ECHO_FLUTE.get());
+                        output.accept(ModItems.GLASS_CUSHION_BOOTS.get());
+                        output.accept(ModItems.GLASS_LIGHTNING_ROD.get());
+                        output.accept(ModItems.GLASS_MAGNET.get());
+                        output.accept(ModItems.GLASS_WARP_COMPASS.get());
+                        output.accept(ModItems.GLASS_REFLECTOR.get());
+                        output.accept(ModItems.GLASS_PRISM.get());
+                        output.accept(ModItems.GLASS_OCEAN_SHELL.get());
+                        output.accept(ModItems.GLASS_ALCHEMIC_FLASK.get());
+                        output.accept(ModItems.GLASS_GOLEM_CORE.get());
 
                         // 1. 易碎玻璃
                         output.accept(ModItems.FRAGILE_GLASS.get());
