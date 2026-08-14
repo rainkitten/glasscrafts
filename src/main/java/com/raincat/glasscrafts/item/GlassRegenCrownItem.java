@@ -25,7 +25,7 @@ public class GlassRegenCrownItem extends Item {
         player.getCooldowns().addCooldown(this, 400); // 20秒冷却时间
 
         level.playSound(null, player.getX(), player.getY(), player.getZ(),
-                SoundEvents.GLASS_CHIME, SoundSource.PLAYERS, 1.0F, 1.2F);
+                SoundEvents.AMETHYST_BLOCK_CHIME, SoundSource.PLAYERS, 1.0F, 1.2F);
 
         if (!level.isClientSide() && level instanceof ServerLevel serverLevel) {
             // 给玩家附加 6 秒的生命恢复 II 状态，用于高频战斗回血

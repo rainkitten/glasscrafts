@@ -29,7 +29,7 @@ public class GlassSonicBellItem extends Item {
 
         // 播放清脆的玻璃钟声音
         level.playSound(null, player.getX(), player.getY(), player.getZ(),
-                SoundEvents.BELL_USE, SoundSource.PLAYERS, 1.2F, 1.6F);
+                SoundEvents.BELL_BLOCK, SoundSource.PLAYERS, 1.2F, 1.6F);
 
         if (!level.isClientSide() && level instanceof ServerLevel serverLevel) {
             BlockPos pos = player.blockPosition();
