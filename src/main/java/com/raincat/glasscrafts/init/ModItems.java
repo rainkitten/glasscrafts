@@ -29,6 +29,14 @@ public class ModItems {
     public static final DeferredItem<BowItem> GLASS_BOW = ITEMS.registerItem("glass_bow", 
             properties -> new BowItem(properties.durability(64).rarity(Rarity.COMMON)));
 
+    // 玻璃透镜 (寻找周围矿石)
+    public static final DeferredItem<com.raincat.glasscrafts.item.GlassLensItem> GLASS_LENS = ITEMS.registerItem("glass_lens", 
+            properties -> new com.raincat.glasscrafts.item.GlassLensItem(properties.durability(50).rarity(Rarity.RARE)));
+
+    // 玻璃护符 (净化负面状态并提供临时加速急迫)
+    public static final DeferredItem<com.raincat.glasscrafts.item.GlassCharmItem> GLASS_CHARM = ITEMS.registerItem("glass_charm", 
+            properties -> new com.raincat.glasscrafts.item.GlassCharmItem(properties.durability(30).rarity(Rarity.RARE)));
+
     // 1. 易碎玻璃系列 (Fragile Glass) - 耐久乘数 1 (极限超低耐久：头盔11/胸甲16/护腿15/靴子13)
     public static final DeferredItem<SwordItem> FRAGILE_GLASS_LONGSWORD = ITEMS.registerItem("fragile_glass_longsword",
             properties -> new SwordItem(ModToolTiers.FRAGILE_GLASS, properties.attributes(SwordItem.createAttributes(ModToolTiers.FRAGILE_GLASS, 3, -2.4F))));

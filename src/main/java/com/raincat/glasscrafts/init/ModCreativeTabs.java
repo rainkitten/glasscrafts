@@ -23,6 +23,8 @@ public class ModCreativeTabs {
                         output.accept(ModItems.GLASS_CHANDELIER.get());
                         output.accept(ModItems.GLASS_PEARL.get());
                         output.accept(ModItems.GLASS_BOW.get());
+                        output.accept(ModItems.GLASS_LENS.get());
+                        output.accept(ModItems.GLASS_CHARM.get());
 
                         // 1. 易碎玻璃
                         output.accept(ModItems.FRAGILE_GLASS.get());
