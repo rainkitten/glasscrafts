@@ -42,6 +42,7 @@ jobs:
           files: build/libs/*.jar # 自动扫描并上传 build/libs 下的所有 jar 文件
           draft: false
           prerelease: false
+          overwrite: true # 如果已有同名 Tag 的 Release，直接覆盖更新附件
           generate_release_notes: true # 自动根据提交记录生成 Release 说明
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
