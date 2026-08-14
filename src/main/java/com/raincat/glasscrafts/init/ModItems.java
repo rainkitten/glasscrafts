@@ -37,6 +37,18 @@ public class ModItems {
     public static final DeferredItem<com.raincat.glasscrafts.item.GlassCharmItem> GLASS_CHARM = ITEMS.registerItem("glass_charm", 
             properties -> new com.raincat.glasscrafts.item.GlassCharmItem(properties.durability(30).rarity(Rarity.RARE)));
 
+    // 玻璃音波钟 (大范围击退并造成少量伤害)
+    public static final DeferredItem<com.raincat.glasscrafts.item.GlassSonicBellItem> GLASS_SONIC_BELL = ITEMS.registerItem("glass_sonic_bell", 
+            properties -> new com.raincat.glasscrafts.item.GlassSonicBellItem(properties.durability(40).rarity(Rarity.EPIC)));
+
+    // 玻璃回生冠 (生命恢复与抗性提升)
+    public static final DeferredItem<com.raincat.glasscrafts.item.GlassRegenCrownItem> GLASS_REGEN_CROWN = ITEMS.registerItem("glass_regen_crown", 
+            properties -> new com.raincat.glasscrafts.item.GlassRegenCrownItem(properties.durability(25).rarity(Rarity.EPIC)));
+
+    // 玻璃冲刺法杖 (大推力冲刺与下落保护)
+    public static final DeferredItem<com.raincat.glasscrafts.item.GlassDashWandItem> GLASS_DASH_WAND = ITEMS.registerItem("glass_dash_wand", 
+            properties -> new com.raincat.glasscrafts.item.GlassDashWandItem(properties.durability(60).rarity(Rarity.RARE)));
+
     // 1. 易碎玻璃系列 (Fragile Glass) - 耐久乘数 1 (极限超低耐久：头盔11/胸甲16/护腿15/靴子13)
     public static final DeferredItem<SwordItem> FRAGILE_GLASS_LONGSWORD = ITEMS.registerItem("fragile_glass_longsword",
             properties -> new SwordItem(ModToolTiers.FRAGILE_GLASS, properties.attributes(SwordItem.createAttributes(ModToolTiers.FRAGILE_GLASS, 3, -2.4F))));

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GGG",
+    "G G"
+  ],
+  "key": {
+    "G": {
+      "item": "raincat_glasscrafts:gold_inlaid_glass"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "raincat_glasscrafts:glass_regen_crown"
+  }
+}
