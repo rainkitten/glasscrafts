@@ -27,70 +27,70 @@ public class ModItems {
             
     // 玻璃弓箭
     public static final DeferredItem<BowItem> GLASS_BOW = ITEMS.registerItem("glass_bow", 
-            properties -> new BowItem(properties.durability(64).rarity(Rarity.COMMON)));
+            properties -> new BowItem(properties.durability(250).rarity(Rarity.COMMON)));
 
     // 玻璃透镜 (寻找周围矿石)
     public static final DeferredItem<com.raincat.glasscrafts.item.GlassLensItem> GLASS_LENS = ITEMS.registerItem("glass_lens", 
-            properties -> new com.raincat.glasscrafts.item.GlassLensItem(properties.durability(50).rarity(Rarity.RARE)));
+            properties -> new com.raincat.glasscrafts.item.GlassLensItem(properties.durability(300).rarity(Rarity.RARE)));
 
     // 玻璃护符 (净化负面状态并提供临时加速急迫)
     public static final DeferredItem<com.raincat.glasscrafts.item.GlassCharmItem> GLASS_CHARM = ITEMS.registerItem("glass_charm", 
-            properties -> new com.raincat.glasscrafts.item.GlassCharmItem(properties.durability(30).rarity(Rarity.RARE)));
+            properties -> new com.raincat.glasscrafts.item.GlassCharmItem(properties.durability(200).rarity(Rarity.RARE)));
 
     // 玻璃音波钟 (大范围击退并造成少量伤害)
     public static final DeferredItem<com.raincat.glasscrafts.item.GlassSonicBellItem> GLASS_SONIC_BELL = ITEMS.registerItem("glass_sonic_bell", 
-            properties -> new com.raincat.glasscrafts.item.GlassSonicBellItem(properties.durability(40).rarity(Rarity.EPIC)));
+            properties -> new com.raincat.glasscrafts.item.GlassSonicBellItem(properties.durability(250).rarity(Rarity.EPIC)));
 
     // 玻璃回生冠 (生命恢复与抗性提升)
     public static final DeferredItem<com.raincat.glasscrafts.item.GlassRegenCrownItem> GLASS_REGEN_CROWN = ITEMS.registerItem("glass_regen_crown", 
-            properties -> new com.raincat.glasscrafts.item.GlassRegenCrownItem(properties.durability(25).rarity(Rarity.EPIC)));
+            properties -> new com.raincat.glasscrafts.item.GlassRegenCrownItem(properties.durability(200).rarity(Rarity.EPIC)));
 
     // 玻璃冲刺法杖 (大推力冲刺与下落保护)
     public static final DeferredItem<com.raincat.glasscrafts.item.GlassDashWandItem> GLASS_DASH_WAND = ITEMS.registerItem("glass_dash_wand", 
-            properties -> new com.raincat.glasscrafts.item.GlassDashWandItem(properties.durability(60).rarity(Rarity.RARE)));
+            properties -> new com.raincat.glasscrafts.item.GlassDashWandItem(properties.durability(400).rarity(Rarity.RARE)));
 
     // 玻璃蒸干法杖 (消去大范围内所有液体)
     public static final DeferredItem<com.raincat.glasscrafts.item.GlassEraseWandItem> GLASS_ERASE_WAND = ITEMS.registerItem("glass_erase_wand", 
-            properties -> new com.raincat.glasscrafts.item.GlassEraseWandItem(properties.durability(80).rarity(Rarity.RARE)));
+            properties -> new com.raincat.glasscrafts.item.GlassEraseWandItem(properties.durability(500).rarity(Rarity.RARE)));
 
     // 玻璃潜行护符 (提供隐形与移动速度)
     public static final DeferredItem<com.raincat.glasscrafts.item.GlassStealthSigilItem> GLASS_STEALTH_SIGIL = ITEMS.registerItem("glass_stealth_sigil", 
-            properties -> new com.raincat.glasscrafts.item.GlassStealthSigilItem(properties.durability(30).rarity(Rarity.RARE)));
+            properties -> new com.raincat.glasscrafts.item.GlassStealthSigilItem(properties.durability(200).rarity(Rarity.RARE)));
 
     // 玻璃催熟剂 (3x3强力骨粉催熟)
     public static final DeferredItem<com.raincat.glasscrafts.item.GlassGrowFertilizerItem> GLASS_GROW_FERTILIZER = ITEMS.registerItem("glass_grow_fertilizer", 
-            properties -> new com.raincat.glasscrafts.item.GlassGrowFertilizerItem(properties.durability(50).rarity(Rarity.UNCOMMON)));
+            properties -> new com.raincat.glasscrafts.item.GlassGrowFertilizerItem(properties.durability(300).rarity(Rarity.UNCOMMON)));
 
     // 10个生存常用好玩玻璃道具
     public static final DeferredItem<com.raincat.glasscrafts.item.GlassEchoFluteItem> GLASS_ECHO_FLUTE = ITEMS.registerItem("glass_echo_flute",
-            properties -> new com.raincat.glasscrafts.item.GlassEchoFluteItem(properties.durability(45).rarity(Rarity.UNCOMMON)));
+            properties -> new com.raincat.glasscrafts.item.GlassEchoFluteItem(properties.durability(250).rarity(Rarity.UNCOMMON)));
 
     public static final DeferredItem<com.raincat.glasscrafts.item.GlassCushionBootsItem> GLASS_CUSHION_BOOTS = ITEMS.registerItem("glass_cushion_boots",
-            properties -> new com.raincat.glasscrafts.item.GlassCushionBootsItem(properties.durability(30).rarity(Rarity.UNCOMMON)));
+            properties -> new com.raincat.glasscrafts.item.GlassCushionBootsItem(properties.durability(200).rarity(Rarity.UNCOMMON)));
 
     public static final DeferredItem<com.raincat.glasscrafts.item.GlassLightningRodItem> GLASS_LIGHTNING_ROD = ITEMS.registerItem("glass_lightning_rod",
-            properties -> new com.raincat.glasscrafts.item.GlassLightningRodItem(properties.durability(20).rarity(Rarity.RARE)));
+            properties -> new com.raincat.glasscrafts.item.GlassLightningRodItem(properties.durability(150).rarity(Rarity.RARE)));
 
     public static final DeferredItem<com.raincat.glasscrafts.item.GlassMagnetItem> GLASS_MAGNET = ITEMS.registerItem("glass_magnet",
-            properties -> new com.raincat.glasscrafts.item.GlassMagnetItem(properties.durability(100).rarity(Rarity.RARE)));
+            properties -> new com.raincat.glasscrafts.item.GlassMagnetItem(properties.durability(600).rarity(Rarity.RARE)));
 
     public static final DeferredItem<com.raincat.glasscrafts.item.GlassWarpCompassItem> GLASS_WARP_COMPASS = ITEMS.registerItem("glass_warp_compass",
-            properties -> new com.raincat.glasscrafts.item.GlassWarpCompassItem(properties.durability(40).rarity(Rarity.RARE)));
+            properties -> new com.raincat.glasscrafts.item.GlassWarpCompassItem(properties.durability(200).rarity(Rarity.RARE)));
 
     public static final DeferredItem<com.raincat.glasscrafts.item.GlassReflectorItem> GLASS_REFLECTOR = ITEMS.registerItem("glass_reflector",
-            properties -> new com.raincat.glasscrafts.item.GlassReflectorItem(properties.durability(50).rarity(Rarity.RARE)));
+            properties -> new com.raincat.glasscrafts.item.GlassReflectorItem(properties.durability(300).rarity(Rarity.RARE)));
 
     public static final DeferredItem<com.raincat.glasscrafts.item.GlassPrismItem> GLASS_PRISM = ITEMS.registerItem("glass_prism",
-            properties -> new com.raincat.glasscrafts.item.GlassPrismItem(properties.durability(60).rarity(Rarity.UNCOMMON)));
+            properties -> new com.raincat.glasscrafts.item.GlassPrismItem(properties.durability(350).rarity(Rarity.UNCOMMON)));
 
     public static final DeferredItem<com.raincat.glasscrafts.item.GlassOceanShellItem> GLASS_OCEAN_SHELL = ITEMS.registerItem("glass_ocean_shell",
-            properties -> new com.raincat.glasscrafts.item.GlassOceanShellItem(properties.durability(35).rarity(Rarity.RARE)));
+            properties -> new com.raincat.glasscrafts.item.GlassOceanShellItem(properties.durability(200).rarity(Rarity.RARE)));
 
     public static final DeferredItem<com.raincat.glasscrafts.item.GlassAlchemicFlaskItem> GLASS_ALCHEMIC_FLASK = ITEMS.registerItem("glass_alchemic_flask",
-            properties -> new com.raincat.glasscrafts.item.GlassAlchemicFlaskItem(properties.durability(25).rarity(Rarity.UNCOMMON)));
+            properties -> new com.raincat.glasscrafts.item.GlassAlchemicFlaskItem(properties.durability(150).rarity(Rarity.UNCOMMON)));
 
     public static final DeferredItem<com.raincat.glasscrafts.item.GlassGolemCoreItem> GLASS_GOLEM_CORE = ITEMS.registerItem("glass_golem_core",
-            properties -> new com.raincat.glasscrafts.item.GlassGolemCoreItem(properties.durability(15).rarity(Rarity.EPIC)));
+            properties -> new com.raincat.glasscrafts.item.GlassGolemCoreItem(properties.durability(100).rarity(Rarity.EPIC)));
 
     // 1. 易碎玻璃系列 (Fragile Glass) - 耐久乘数 1 (极限超低耐久：头盔11/胸甲16/护腿15/靴子13)
     public static final DeferredItem<SwordItem> FRAGILE_GLASS_LONGSWORD = ITEMS.registerItem("fragile_glass_longsword",

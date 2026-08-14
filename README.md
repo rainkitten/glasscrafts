@@ -5,7 +5,7 @@
 ![Minecraft](https://img.shields.io/badge/Minecraft-1.21-blue.svg?style=for-the-badge&logo=minecraft)
 ![NeoForge](https://img.shields.io/badge/NeoForge-21.0.167-orange.svg?style=for-the-badge)
 ![Java](https://img.shields.io/badge/Java-21-red.svg?style=for-the-badge&logo=openjdk)
-![Version](https://img.shields.io/badge/Version-2.0.5-brightgreen.svg?style=for-the-badge)
+![Version](https://img.shields.io/badge/Version-2.0.6-brightgreen.svg?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-lightgrey.svg?style=for-the-badge)
 [![GitHub Repo stars](https://img.shields.io/github/stars/rainkitten/glasscrafts?style=for-the-badge&logo=github)](https://github.com/rainkitten/glasscrafts)
 [![GitHub forks](https://img.shields.io/github/forks/rainkitten/glasscrafts?style=for-the-badge&logo=github)](https://github.com/rainkitten/glasscrafts)

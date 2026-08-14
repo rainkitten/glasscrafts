@@ -20,8 +20,6 @@ public class GlassDashWandItem extends Item {
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         ItemStack itemstack = player.getItemInHand(hand);
-        
-        player.getCooldowns().addCooldown(this, 10); // 0.5秒极短CD
 
         // 播放玻璃闪鸣的音效
         level.playSound(null, player.getX(), player.getY(), player.getZ(),
