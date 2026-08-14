@@ -1,5 +1,5 @@
 {
-  "itemGroup.raincat_glasscrafts": "Glass Crafts - Equipment & Tools",
+  "itemGroup.raincat_glasscrafts": "Glass Crafts",
   "effect.raincat_glasscrafts.glass_shard": "Pricked",
   "message.raincat_glasscrafts.pricked_self": "Ouch! You were pricked by a glass tool.",
 
@@ -9,7 +9,7 @@
   "block.raincat_glasscrafts.diamond_inlaid_glass": "Diamond Inlaid Glass",
   "block.raincat_glasscrafts.void_glass": "Void Glass",
   "block.raincat_glasscrafts.glass_chest": "Glass Chest",
-  "container.raincat_glasscrafts.glass_chest": "Glass Chest (81 Slots)",
+  "container.raincat_glasscrafts.glass_chest": "Glass Chest",
 
   "block.raincat_glasscrafts.glass_torch": "Glass Torch",
   "block.raincat_glasscrafts.glass_chandelier": "Glass Chandelier",

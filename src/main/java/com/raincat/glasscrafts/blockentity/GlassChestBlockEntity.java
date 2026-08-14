@@ -16,8 +16,8 @@ import net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 
 public class GlassChestBlockEntity extends RandomizableContainerBlockEntity {
-    // 3倍原版单箱子容量 = 27 * 3 = 81 格
-    public static final int CONTAINER_SIZE = 81;
+    // 54 格 (9x6 标准大界面)
+    public static final int CONTAINER_SIZE = 54;
     private NonNullList<ItemStack> items = NonNullList.withSize(CONTAINER_SIZE, ItemStack.EMPTY);
 
     public GlassChestBlockEntity(BlockPos pos, BlockState state) {

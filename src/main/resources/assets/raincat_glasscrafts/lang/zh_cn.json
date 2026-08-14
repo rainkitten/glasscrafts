@@ -1,5 +1,5 @@
 {
-  "itemGroup.raincat_glasscrafts": "玻璃工艺 - 装备与工具",
+  "itemGroup.raincat_glasscrafts": "玻璃工艺",
   "effect.raincat_glasscrafts.glass_shard": "扎死我了",
   "message.raincat_glasscrafts.pricked_self": "哎哟，你被玻璃工具扎到了。",
 
@@ -9,7 +9,7 @@
   "block.raincat_glasscrafts.diamond_inlaid_glass": "镶钻玻璃",
   "block.raincat_glasscrafts.void_glass": "虚无玻璃",
   "block.raincat_glasscrafts.glass_chest": "玻璃箱子",
-  "container.raincat_glasscrafts.glass_chest": "玻璃箱子 (81格超大空间)",
+  "container.raincat_glasscrafts.glass_chest": "玻璃箱子",
   
   "block.raincat_glasscrafts.glass_torch": "玻璃火把",
   "block.raincat_glasscrafts.glass_chandelier": "玻璃吊灯",

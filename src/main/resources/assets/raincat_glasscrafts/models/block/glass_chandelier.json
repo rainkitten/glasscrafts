@@ -2,6 +2,6 @@
   "parent": "minecraft:block/cube_all",
   "render_type": "minecraft:translucent",
   "textures": {
-    "all": "raincat_glasscrafts:block/toughened_glass"
+    "all": "minecraft:block/glass"
   }
 }

@@ -2,6 +2,7 @@ package com.raincat.glasscrafts.item;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.DustParticleOptions;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
@@ -80,20 +81,26 @@ public class GlassLensItem extends Item {
                 Vector3f color = getOreColor(state);
                 if (color == null) color = new Vector3f(1.0F, 1.0F, 1.0F);
 
-                DustParticleOptions dustParticle = new DustParticleOptions(color, 1.2F);
+                DustParticleOptions dustParticle = new DustParticleOptions(color, 2.0F);
                 Vec3 endVec = new Vec3(closestCenter.getX() + 0.5, closestCenter.getY() + 0.5, closestCenter.getZ() + 0.5);
 
                 double distance = startVec.distanceTo(endVec);
-                int steps = Math.max(5, (int) (distance * 2.5)); // 密集连贯线条
+                int steps = Math.max(20, (int) (distance * 8.0)); // 极高密度连贯线条
 
-                for (int i = 0; i <= steps; i++) {
-                    double t = (double) i / steps;
-                    double px = startVec.x + (endVec.x - startVec.x) * t;
-                    double py = startVec.y + (endVec.y - startVec.y) * t;
-                    double pz = startVec.z + (endVec.z - startVec.z) * t;
+                // 在 3 秒内 (分多次/持续粒子供给) 发送穿墙粒子线
+                for (int wave = 0; wave < 3; wave++) {
+                    for (int i = 0; i <= steps; i++) {
+                        double t = (double) i / steps;
+                        double px = startVec.x + (endVec.x - startVec.x) * t;
+                        double py = startVec.y + (endVec.y - startVec.y) * t;
+                        double pz = startVec.z + (endVec.z - startVec.z) * t;
 
-                    // 穿墙直接发送给玩家
-                    serverLevel.sendParticles(serverPlayer, dustParticle, true, px, py, pz, 1, 0, 0, 0, 0);
+                        // 穿墙直接发送给玩家
+                        serverLevel.sendParticles(serverPlayer, dustParticle, true, px, py, pz, 1, 0.02, 0.02, 0.02, 0.0);
+                        if (i % 3 == 0) {
+                            serverLevel.sendParticles(serverPlayer, ParticleTypes.GLOW, true, px, py, pz, 1, 0.01, 0.01, 0.01, 0.01);
+                        }
+                    }
                 }
             }
 
