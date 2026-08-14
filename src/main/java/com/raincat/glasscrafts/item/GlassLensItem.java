@@ -3,6 +3,9 @@ package com.raincat.glasscrafts.item;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
@@ -21,15 +24,16 @@ public class GlassLensItem extends Item {
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         ItemStack itemstack = player.getItemInHand(hand);
         
-        // 赋予玩家 5 秒的冷却时间
         player.getCooldowns().addCooldown(this, 100);
 
-        if (!level.isClientSide() && level instanceof ServerLevel serverLevel) {
-            BlockPos playerPos = player.blockPosition();
-            int radius = 10;
-            int foundOreCount = 0;
+        level.playSound(null, player.getX(), player.getY(), player.getZ(),
+                SoundEvents.AMETHYST_BLOCK_CHIME, SoundSource.PLAYERS, 1.0F, 1.6F);
 
-            // 扫描周围 10 格内的珍贵矿石 (钻石、黄金、铁) 并高亮粒子展示
+        if (!level.isClientSide() && level instanceof ServerLevel serverLevel && player instanceof ServerPlayer serverPlayer) {
+            BlockPos playerPos = player.blockPosition();
+            int radius = 12;
+
+            // 扫描周围 12 格内的珍贵矿石
             for (int x = -radius; x <= radius; x++) {
                 for (int y = -radius; y <= radius; y++) {
                     for (int z = -radius; z <= radius; z++) {
@@ -39,19 +43,23 @@ public class GlassLensItem extends Item {
                         if (state.is(Blocks.DIAMOND_ORE) || state.is(Blocks.DEEPSLATE_DIAMOND_ORE) ||
                             state.is(Blocks.GOLD_ORE) || state.is(Blocks.DEEPSLATE_GOLD_ORE) ||
                             state.is(Blocks.IRON_ORE) || state.is(Blocks.DEEPSLATE_IRON_ORE) ||
-                            state.is(Blocks.EMERALD_ORE) || state.is(Blocks.DEEPSLATE_EMERALD_ORE)) {
+                            state.is(Blocks.EMERALD_ORE) || state.is(Blocks.DEEPSLATE_EMERALD_ORE) ||
+                            state.is(Blocks.ANCIENT_DEBRIS)) {
                             
-                            // 在矿石位置产生闪烁的粒子提示玩家
-                            serverLevel.sendParticles(ParticleTypes.GLOW, 
-                                    scanPos.getX() + 0.5, scanPos.getY() + 0.5, scanPos.getZ() + 0.5, 
-                                    10, 0.2, 0.2, 0.2, 0.05);
-                            foundOreCount++;
+                            // 直接发送发光的END_ROD和GLOW粒子给该玩家，使其穿墙清晰可见
+                            double px = scanPos.getX() + 0.5;
+                            double py = scanPos.getY() + 0.5;
+                            double pz = scanPos.getZ() + 0.5;
+
+                            serverLevel.sendParticles(serverPlayer, ParticleTypes.END_ROD, true,
+                                    px, py, pz, 15, 0.3, 0.3, 0.3, 0.02);
+                            serverLevel.sendParticles(serverPlayer, ParticleTypes.GLOW, true,
+                                    px, py, pz, 15, 0.3, 0.3, 0.3, 0.05);
                         }
                     }
                 }
             }
 
-            // 消耗 1 点耐久
             itemstack.hurtAndBreak(1, player, player.getEquipmentSlotForItem(itemstack));
         }
 

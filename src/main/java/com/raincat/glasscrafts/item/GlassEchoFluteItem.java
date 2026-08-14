@@ -67,4 +67,9 @@ public class GlassEchoFluteItem extends Item {
 
         return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
     }
+
+    @Override
+    public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<net.minecraft.network.chat.Component> tooltipComponents, net.minecraft.world.item.TooltipFlag tooltipFlag) {
+        tooltipComponents.add(net.minecraft.network.chat.Component.translatable(this.getDescriptionId() + ".desc").withStyle(net.minecraft.ChatFormatting.GRAY));
+    }
 }

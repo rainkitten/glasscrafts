@@ -31,8 +31,9 @@ public class GlassCushionBootsItem extends Item {
                 SoundEvents.PLAYER_BIG_FALL, SoundSource.PLAYERS, 1.0F, 1.5F);
 
         if (!level.isClientSide() && level instanceof ServerLevel serverLevel) {
-            // 附加 15 秒缓降效果
+            // 附加 15 秒缓降与跳跃提升 II 效果
             player.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 300, 0));
+            player.addEffect(new MobEffectInstance(MobEffects.JUMP, 300, 1)); // 跳跃提升 II
             // 并通过抗性提升确保这段时间内不受任何高空坠落的意外伤害
             player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 300, 4)); // 抗性 V 相当于无敌
 
