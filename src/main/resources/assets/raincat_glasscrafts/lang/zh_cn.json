@@ -37,7 +37,7 @@
 
   "item.raincat_glasscrafts.glass_pearl.desc": "投掷伤害并施加【扎死我了】流血减益",
   "item.raincat_glasscrafts.glass_bow.desc": "附着玻璃碎屑，概率施加流血减益",
-  "item.raincat_glasscrafts.glass_lens.desc": "发射对应颜色连贯粒子线标记大范围内各矿脉中心",
+  "item.raincat_glasscrafts.glass_lens.desc": "发射对应颜色连贯粒子线仅标记距离最近的 1 个矿脉中心",
   "item.raincat_glasscrafts.glass_charm.desc": "消除身上负面状态并提供临时加速与急迫",
   "item.raincat_glasscrafts.glass_sonic_bell.desc": "产生声波强力击退周围 12 格内的生物",
   "item.raincat_glasscrafts.glass_regen_crown.desc": "提供生命恢复与抗性提升效果",

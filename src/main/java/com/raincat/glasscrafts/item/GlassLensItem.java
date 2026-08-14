@@ -60,16 +60,28 @@ public class GlassLensItem extends Item {
                 }
             }
 
-            // 2. 从玩家位置向每个矿物群中心发射受矿物颜色影响的连贯粒子线条
+            // 2. 从玩家位置寻找最近的 1 个矿物群中心并发射受矿物颜色影响的连贯粒子线条
             Vec3 startVec = player.getEyePosition().add(0, -0.2, 0);
 
+            BlockPos closestCenter = null;
+            double minDistanceSq = Double.MAX_VALUE;
+
             for (BlockPos center : oreClusterCenters) {
-                BlockState state = level.getBlockState(center);
+                Vec3 centerVec = new Vec3(center.getX() + 0.5, center.getY() + 0.5, center.getZ() + 0.5);
+                double distSq = startVec.distanceToSqr(centerVec);
+                if (distSq < minDistanceSq) {
+                    minDistanceSq = distSq;
+                    closestCenter = center;
+                }
+            }
+
+            if (closestCenter != null) {
+                BlockState state = level.getBlockState(closestCenter);
                 Vector3f color = getOreColor(state);
                 if (color == null) color = new Vector3f(1.0F, 1.0F, 1.0F);
 
                 DustParticleOptions dustParticle = new DustParticleOptions(color, 1.2F);
-                Vec3 endVec = new Vec3(center.getX() + 0.5, center.getY() + 0.5, center.getZ() + 0.5);
+                Vec3 endVec = new Vec3(closestCenter.getX() + 0.5, closestCenter.getY() + 0.5, closestCenter.getZ() + 0.5);
 
                 double distance = startVec.distanceTo(endVec);
                 int steps = Math.max(5, (int) (distance * 2.5)); // 密集连贯线条
